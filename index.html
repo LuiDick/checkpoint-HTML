@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mon Portfolio</title>
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#work">Travail</a></li>
+            <li><a href="#resume">CV</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section Accueil -->
+    <section id="home">
+        <h1>Bienvenue sur mon portfolio</h1>
+        <p>Bienvenue sur ma page de portfolio personnelle. Je suis passionné par la création de sites web.</p>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="about">
+        <h2>À propos de moi</h2>
+        <p>Je suis un développeur web avec une passion pour la création de sites web attrayants et fonctionnels.</p>
+    </section>
+
+    <!-- Section Travail -->
+    <section id="work">
+        <h2>Mon Travail</h2>
+        <p>Voici quelques-uns de mes projets récents :</p>
+        <!-- Utilisation d'une liste non ordonnée pour afficher des projets -->
+        <ul>
+            <li><a href="projet1.html">Projet 1</a></li>
+            <li><a href="projet2.html">Projet 2</a></li>
+            <li><a href="projet3.html">Projet 3</a></li>
+        </ul>
+    </section>
+
+    <!-- Section CV -->
+    <section id="resume">
+        <h2>Mon CV</h2>
+        <p>Vous trouverez ci-dessous mon CV à télécharger :</p>
+        <!-- Utilisation d'un formulaire pour permettre le téléchargement du CV -->
+        <form action="cv.pdf" method="get">
+            <button type="submit">Télécharger CV</button>
+        </form>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <p>Vous pouvez me contacter en utilisant le formulaire ci-dessous :</p>
+        <!-- Utilisation d'un formulaire de contact -->
+        <form action="envoyer_message.php" method="post">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required><br>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2023 Mon Portfolio</p>
+    </footer>
+</body>
+</html>
